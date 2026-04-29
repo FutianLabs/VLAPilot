@@ -1,0 +1,53 @@
+{
+  "agent": {
+    "mission_dir": "examples/missions/desk_cleanup",
+    "session_dir": "~/.vlapilot/sessions",
+    "max_iterations": 50,
+    "log_level": "INFO",
+    "planner": {
+      "provider": "openai",
+      "model": "gpt-4o",
+      "api_base": "https://api.openai.com/v1",
+      "api_key": "sk-..."
+    }
+  },
+  "arm": {
+    "mcp_command": "vla-pi05-piper",
+    "capability_tasks_file": "examples/missions/desk_cleanup/tasks.yaml",
+    "policy_path": "/path/to/pi0.5_policy",
+    "can_interface": "can0",
+    "device": "cuda",
+    "cameras": {
+      "main": {
+        "serial_number": "109622071821"
+      },
+      "wrist": {
+        "serial_number": "109622071821"
+      }
+    },
+    "verify": {
+      "provider": "local",
+      "providers": {
+        "openrouter": {
+          "model": "qwen/qwen-2.5-vl-7b-instruct",
+          "api_key": "sk-or-your-key-here",
+          "api_base": "https://openrouter.ai/api/v1"
+        },
+        "local": {
+          "model": "Qwen2.5-VL-7B-Instruct",
+          "api_key": "",
+          "api_base": "http://127.0.0.1:1821/v1"
+        },
+        "ark": {
+          "model": "doubao-seed-2-0-lite-250821",
+          "api_key": "YOUR-ARK-API-KEY",
+          "api_base": "https://ark.cn-beijing.volces.com/api/v3"
+        }
+      },
+      "timeout_s": 180,
+      "http_timeout_s": 90,
+      "debug": false
+    },
+    "safety_force_threshold_n": 5.0
+  }
+}

@@ -1,0 +1,24 @@
+# VLA trained task vocabulary
+# Keep in sync with the checkpoint capability vocabulary.
+
+tasks:
+  - id: 0
+    instruction: "Put the bottle into the white box."
+  - id: 3
+    instruction: "Put the paper ball into the yellow trash bin."
+  - id: 4
+    instruction: "Put the pen into the pen holder."
+  - id: 5
+    instruction: "Close the laptop lid."
+  - id: 13
+    instruction: "Place the tissue in front of the human."
+  - id: 15
+    instruction: "Place the bottle in front of the human."
+  - id: 16
+    instruction: "Put the white earphones on the black charger."
+  - id: 17
+    instruction: "press the black switch."
+  - id: 18
+    instruction: "Hand the screwdriver in front of the human."
+  - id: 19
+    instruction: "Put the red can into the trash bin."

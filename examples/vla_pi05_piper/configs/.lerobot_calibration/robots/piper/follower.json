@@ -1,0 +1,44 @@
+{
+    "joint_1": {
+        "id": 1,
+        "drive_mode": 0,
+        "homing_offset": 673,
+        "range_min": -155359,
+        "range_max": 154437
+    },
+    "joint_2": {
+        "id": 2,
+        "drive_mode": 0,
+        "homing_offset": -1602,
+        "range_min": -1231,
+        "range_max": 188355
+    },
+    "joint_3": {
+        "id": 3,
+        "drive_mode": 0,
+        "homing_offset": 981,
+        "range_min": -175106,
+        "range_max": 1356
+    },
+    "joint_4": {
+        "id": 4,
+        "drive_mode": 0,
+        "homing_offset": 2157,
+        "range_min": -104672,
+        "range_max": 100278
+    },
+    "joint_5": {
+        "id": 5,
+        "drive_mode": 0,
+        "homing_offset": -1177,
+        "range_min": -95821,
+        "range_max": 55649
+    },
+    "joint_6": {
+        "id": 6,
+        "drive_mode": 0,
+        "homing_offset": 0,
+        "range_min": -121391,
+        "range_max": 121625
+    }
+}
