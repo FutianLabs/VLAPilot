@@ -1,18 +1,20 @@
 # Demo recordings
 
-Raw clips live here as `.mp4`; static poster frames for tables live under `previews/*.webp`.
+Raw clips live here as `.mp4`; static poster frames and README looping GIFs live
+under `previews/` (e.g. `previews/*.webp`, `previews/*.gif`).
 
-For **GitHub README autoplay**, export a **GIF** (full clip length; GIF is
-palette‑compressed and typically lower fps than MP4) and host it next to the clip
-on the project site (`vlapilot_webpage`: `docs/public/demo/`), same basename as
-the MP4. Example matching the deployed assets:
+For **GitHub README autoplay**, keep full-length GIFs under `previews/` and point
+README `<img>` at repo-relative paths (`examples/demo/previews/foo.gif`). GIFs in
+README should stay modest—a few MiB—to avoid proxies timing out on huge files:
+lower `fps` / `scale` / palette depth before shortening the clip (unless you want
+an excerpt):
 
 ```bash
-ffmpeg -y -i cleandesk.mp4 -vf "fps=8,scale=400:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=128[p];[s1][p]paletteuse" cleandesk.gif
+ffmpeg -y -i cleandesk.mp4 -vf "fps=6,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=96[p];[s1][p]paletteuse" previews/cleandesk.gif
 ```
 
-Raise `fps` for smoother motion (larger file); lower `scale` width to shrink the
-GIF. Omit `-t`/`-ss`/`…trim` filters if you want the entire MP4 baked into the GIF.
+You may also host GIFs next to `.mp4` on the project site (`vlapilot_webpage`:
+`docs/public/demo/`), but very large remote GIFs can render blank.
 
 ## Repo size vs hosting
 

@@ -28,11 +28,9 @@ reason.
 Desk-cleaner demos cover direct interaction, object hand-over, object
 placement, and multi-step plan -> act -> verify missions. Preview assets live
 under `examples/demo/previews/`; raw clips can be placed under `examples/demo/`
-as described in `examples/demo/README.md`. Multi-step rows below load full-length
-animated GIFs from the [project page](https://jinghangli.github.io/vlapilot/) so
-they auto-play inline on GitHub (README does not autoplay MP4); GIFs mirror the
-entire demo with reduced fps and palette—the linked MP4 is still the
-highest‑fidelity source.
+as described in `examples/demo/README.md`. Multi-step rows below use **in-repo**
+full-length GIFs so GitHub resolves them reliably; click opens **MP4** on the
+[project page](https://jinghangli.github.io/vlapilot/) for best quality.
 
 ### Multi-Step Missions
 
@@ -42,12 +40,12 @@ highest‑fidelity source.
       <td width="50%" align="center" valign="top">
         <b>Clean up the desk</b><br>
         <sub>multi-step | autonomous | 1x</sub><br><br>
-        <a href="https://jinghangli.github.io/vlapilot/demo/cleandesk.mp4" title="Full-quality MP4"><img src="https://jinghangli.github.io/vlapilot/demo/cleandesk.gif" width="400" alt="Clean up the desk"></a>
+        <a href="https://jinghangli.github.io/vlapilot/demo/cleandesk.mp4" title="Full-quality MP4"><img src="examples/demo/previews/cleandesk.gif" width="320" alt="Clean up the desk"></a>
       </td>
       <td width="50%" align="center" valign="top">
         <b>Wrap up the desk</b><br>
         <sub>multi-step | autonomous | 1x</sub><br><br>
-        <a href="https://jinghangli.github.io/vlapilot/demo/offduty.mp4" title="Full-quality MP4"><img src="https://jinghangli.github.io/vlapilot/demo/offduty.gif" width="400" alt="Wrap up the desk"></a>
+        <a href="https://jinghangli.github.io/vlapilot/demo/offduty.mp4" title="Full-quality MP4"><img src="examples/demo/previews/offduty.gif" width="320" alt="Wrap up the desk"></a>
       </td>
     </tr>
   </tbody>
