@@ -1,6 +1,18 @@
 # Demo recordings
 
-Raw clips live here as `.mp4`; README inline previews are generated under `previews/*.webp`.
+Raw clips live here as `.mp4`; static poster frames for tables live under `previews/*.webp`.
+
+For **GitHub README autoplay**, export a **GIF** (full clip length; GIF is
+palette‑compressed and typically lower fps than MP4) and host it next to the clip
+on the project site (`vlapilot_webpage`: `docs/public/demo/`), same basename as
+the MP4. Example matching the deployed assets:
+
+```bash
+ffmpeg -y -i cleandesk.mp4 -vf "fps=8,scale=400:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=128[p];[s1][p]paletteuse" cleandesk.gif
+```
+
+Raise `fps` for smoother motion (larger file); lower `scale` width to shrink the
+GIF. Omit `-t`/`-ss`/`…trim` filters if you want the entire MP4 baked into the GIF.
 
 ## Repo size vs hosting
 
