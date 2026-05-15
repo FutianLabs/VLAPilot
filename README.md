@@ -38,12 +38,16 @@ as described in `examples/demo/README.md`.
       <td width="50%" align="center" valign="top">
         <b>Clean up the desk</b><br>
         <sub>multi-step | autonomous | 1x</sub><br><br>
-        <img src="examples/demo/previews/clean_desk.webp" width="520" alt="Clean up the desk">
+        <video width="520" controls playsinline preload="metadata" poster="examples/demo/previews/clean_desk.webp">
+          <source src="https://jinghangli.github.io/vlapilot/demo/cleandesk.mp4" type="video/mp4">
+        </video>
       </td>
       <td width="50%" align="center" valign="top">
         <b>Wrap up the desk</b><br>
         <sub>multi-step | autonomous | 1x</sub><br><br>
-        <img src="examples/demo/previews/close_laptopv2.webp" width="520" alt="Wrap up the desk">
+        <video width="520" controls playsinline preload="metadata" poster="examples/demo/previews/close_laptopv2.webp">
+          <source src="https://jinghangli.github.io/vlapilot/demo/offduty.mp4" type="video/mp4">
+        </video>
       </td>
     </tr>
   </tbody>
